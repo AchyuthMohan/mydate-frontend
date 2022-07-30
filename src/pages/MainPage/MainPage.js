@@ -21,20 +21,21 @@ const MainPage = () => {
             console.log(error)
         })
     },[])
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        axios.POST(`http://127.0.0.1:8000/person/`,{
-            email:email,
-            name:crushName,
-            auth_name:yourName,
-            message:message,
-            auth_phno:pno,
-
+    const handleSubmit= async(e)=>{
+        let formField=new FormData
+        formField.append("name",crushName)
+        formField.append("author_name",yourName)
+        formField.append("message",message)
+        formField.append("email",email)
+        formField.append("auth_phno",pno)
+        await axios({
+          method:'post',
+          url:`${baseUrl}/person/`,
+          data: formField
         }).then((response)=>{
-            console.log(response)
-        },(error)=>{
-            console.log(error)
+          console.log(response)
         })
+
     }
     const defaultOptions = {
         loop: true,
