@@ -5,6 +5,10 @@ import anim from '../../animations/anim.json'
 import Card from '../../components/Card/Card'
 import { baseUrl } from '../../utils/urls'
 import axios from 'axios'
+
+
+
+
 const MainPage = () => {
     const[persons,setPerson]=useState([])
     const[crushName,setCrushName]=useState('')
@@ -57,23 +61,24 @@ const MainPage = () => {
             </div>
 
             <form  className='form-container' id="contact" onSubmit={handleSubmit}>
-    <fieldset>
-      <input className='field1'  value={crushName} placeholder="Your crush name" type="text" tabindex="1" required autofocus onChange={(e)=>{setCrushName(e.target.value)}}/>
+    <fieldset className='fields'>
+      <input className='field1' value={crushName} placeholder="&#xf007; Your crush name" type="text" tabindex="1" required autofocus onChange={(e)=>{setCrushName(e.target.value)}}/>
     </fieldset>
     <fieldset>
-      <input className='field1' value={yourName} placeholder="Your  name" type="text" tabindex="1" required autofocus onChange={(e)=>{setYourName(e.target.value)}}/>
+      <input className='field1' value={yourName} placeholder="&#xf007; Your name" type="text" tabindex="1" required autofocus onChange={(e)=>{setYourName(e.target.value)}}/>
     </fieldset>
     <fieldset>
-      <input value={email} placeholder="Your Email Address" type="email" tabindex="2" required onChange={(e)=>{setEmail(e.target.value)}}/>
+      <input className='field1' value={email} placeholder="&#xf0e0; Your Email Address" type="email" tabindex="2" required onChange={(e)=>{setEmail(e.target.value)}}/>
     </fieldset>
     <fieldset>
-      <input value={pno} placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required onChange={(e)=>{setPno(e.target.value)}}/>
+      <input className='field1' value={pno} placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required onChange={(e)=>{setPno(e.target.value)}}/>
     </fieldset>
     <fieldset>
-      <textarea value={message} placeholder="Type your message here...." tabindex="5" required onChange={(e)=>{setMessage(e.target.value)}}></textarea>
+      <textarea  className='field2' value={message} placeholder="Type your message here...." tabindex="5" required onChange={(e)=>{setMessage(e.target.value)}}></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+      <button className='field3'
+      name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
     </fieldset>
    
   </form>
