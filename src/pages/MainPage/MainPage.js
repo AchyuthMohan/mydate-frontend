@@ -55,12 +55,12 @@ const MainPage = () => {
                 <Lottie options={defaultOptions} style={{width:'90%' ,height:'30%'}}/>
             </div>
 
-            <form id="contact" onSubmit={handleSubmit}>
+            <form  className='form-container' id="contact" onSubmit={handleSubmit}>
     <fieldset>
-      <input value={crushName} placeholder="Your crush name" type="text" tabindex="1" required autofocus onChange={(e)=>{setCrushName(e.target.value)}}/>
+      <input className='field1'  value={crushName} placeholder="Your crush name" type="text" tabindex="1" required autofocus onChange={(e)=>{setCrushName(e.target.value)}}/>
     </fieldset>
     <fieldset>
-      <input value={yourName} placeholder="Your  name" type="text" tabindex="1" required autofocus onChange={(e)=>{setYourName(e.target.value)}}/>
+      <input className='field1' value={yourName} placeholder="Your  name" type="text" tabindex="1" required autofocus onChange={(e)=>{setYourName(e.target.value)}}/>
     </fieldset>
     <fieldset>
       <input value={email} placeholder="Your Email Address" type="email" tabindex="2" required onChange={(e)=>{setEmail(e.target.value)}}/>
