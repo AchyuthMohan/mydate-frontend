@@ -33,8 +33,9 @@
 	border-color: aqua;
 	height: 25px;
 	margin-top: 10px;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Montserrat';
 	font-weight: 500px;
+	color: #ffff;
 }
 .field2{
 	border-radius: 7px;
@@ -42,14 +43,16 @@
 	border-color: aqua;
 	margin-top: 10px;
 	height: 45px;
-	font-family: 'Font Awesome 5 Free';
-
+	font-family: 'Montserrat';
+	color: #ffff;
 }
 .field3{
 	border-radius: 7px;
 	background-color: steelblue;
 	border-color: blueviolet;
 	margin-top: 10px;
+	color: #ffff;
+	font-family: 'Montserrat';
 }
 
 #stars {

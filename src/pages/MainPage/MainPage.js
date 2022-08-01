@@ -62,7 +62,7 @@ const MainPage = () => {
           
             <form  className='form-container' id="contact" onSubmit={handleSubmit}>
  
-      <input className='field1' value={crushName} placeholder="&#xf007; Your crush name" type="text" tabindex="1" required autofocus onChange={(e)=>{setCrushName(e.target.value)}}/>
+      <input className='field1' value={crushName} placeholder="Your crush name" type="text" tabindex="1" required autofocus onChange={(e)=>{setCrushName(e.target.value)}}/>
    
       <input className='field1' value={yourName} placeholder="&#xf007; Your name" type="text" tabindex="1" required autofocus onChange={(e)=>{setYourName(e.target.value)}}/>
    
