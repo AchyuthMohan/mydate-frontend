@@ -24,21 +24,23 @@
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content:flex-end;
 	align-content: space-between;
 }
 .field1{
     border-radius: 7px;
-	background-color: #CCFFFF;
+	background-color: rgba(99,51,104,.37);
 	border-color: aqua;
 	height: 25px;
+	margin-top: 10px;
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 500px;
 }
 .field2{
 	border-radius: 7px;
-	background-color: #CCFFFF;
+	background-color: rgba(99,51,104,.37);
 	border-color: aqua;
+	margin-top: 10px;
 	height: 45px;
 	font-family: 'Font Awesome 5 Free';
 
@@ -47,7 +49,7 @@
 	border-radius: 7px;
 	background-color: steelblue;
 	border-color: blueviolet;
-
+	margin-top: 10px;
 }
 
 #stars {

@@ -14,7 +14,7 @@ const MainPage = () => {
     const[crushName,setCrushName]=useState('')
     const[yourName,setYourName]=useState('')
     const[email,setEmail]=useState('')
-    const[pno,setPno]=useState(0)
+    const[pno,setPno]=useState()
     const[message,setMessage]=useState('')
 
 

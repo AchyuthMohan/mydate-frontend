@@ -1,5 +1,5 @@
 .App {
   min-height: 100vh;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 2%, rgba(253,187,45,1) 100%);
+  background-color: #140915;
+  background: radial-gradient(200.65% 776.86% at -9.28% 116.91%, #140915 25.44%, #01baef 100%);
 }
