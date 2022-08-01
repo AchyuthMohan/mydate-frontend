@@ -21,13 +21,15 @@
 }
 .form-container{
 	border-color: aquamarine;
-}
-.fields{
-	
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
 }
 .field1{
     border-radius: 7px;
-	background-color: cyan;
+	background-color: #CCFFFF;
 	border-color: aqua;
 	height: 25px;
 	font-family: 'Font Awesome 5 Free';
@@ -35,16 +37,16 @@
 }
 .field2{
 	border-radius: 7px;
-	background-color: cyan;
+	background-color: #CCFFFF;
 	border-color: aqua;
-	height: 50px;
+	height: 45px;
 	font-family: 'Font Awesome 5 Free';
 
 }
 .field3{
 	border-radius: 7px;
-	background-color: cyan;
-	border-color: aqua;
+	background-color: steelblue;
+	border-color: blueviolet;
 
 }
 
