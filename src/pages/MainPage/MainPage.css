@@ -19,6 +19,36 @@
 .land__anim{
     margin-top:5% ;
 }
+.form-container{
+	border-color: aquamarine;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.field1{
+    border-radius: 7px;
+	background-color: #CCFFFF;
+	border-color: aqua;
+	height: 25px;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 500px;
+}
+.field2{
+	border-radius: 7px;
+	background-color: #CCFFFF;
+	border-color: aqua;
+	height: 45px;
+	font-family: 'Font Awesome 5 Free';
+
+}
+.field3{
+	border-radius: 7px;
+	background-color: steelblue;
+	border-color: blueviolet;
+
+}
 
 #stars {
 	width: 1px;
